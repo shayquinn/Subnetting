@@ -2,6 +2,8 @@
 
 A comprehensive interactive tool designed to help students and network professionals understand, visualize, and practice IP subnetting concepts. This application breaks down the complex binary logic behind networking into an easy-to-understand visual format.
 
+![Demo](Screenshot.png)
+
 ## 🚀 How to Run
 **Windows:**
 Double-click the `startapp.bat` file in the folder. This will automatically open the application in your default web browser.

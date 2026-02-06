@@ -276,9 +276,16 @@
                         <p><strong>Solution:</strong></p>
                         <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">
                             <li><strong>Block Size:</strong> 256 - 224 = 32.</li>
-                            <li><strong>Find Subnet:</strong> Multiples are 0, 32, 64, 96... IP .75 is in the .64 subnet.</li>
-                            <li><strong>Rule:</strong> Broadcast is the number right before the <em>next</em> subnet.</li>
-                            <li>Next subnet is 96. Broadcast = 96 - 1 = 95.</li>
+                            <li><strong>Find Subnet Ranges:</strong>
+                                <ul style="list-style-type: circle; margin-left: 20px; margin-top: 5px;">
+                                    <li>Subnet 1: 0 - 31</li>
+                                    <li>Subnet 2: 32 - 63</li>
+                                    <li><strong>Subnet 3: 64 - 95</strong> (Target IP .75 is here)</li>
+                                    <li>Subnet 4: 96 - 127</li>
+                                </ul>
+                            </li>
+                            <li><strong>Rule:</strong> Broadcast is the last number in the range (or number right before the <em>next</em> subnet).</li>
+                            <li>Next subnet starts at 96. Broadcast = 96 - 1 = 95.</li>
                         </ul>
                         <p><strong>Answer:</strong> 192.168.1.95</p>
                     </div>
